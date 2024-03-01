@@ -1,11 +1,11 @@
 public class BonusMilesService {
 
-    public int calculate(int Price) {
-        if (Price < 10000) {
+    public int calculate(int price) {
+        if (price <= 1000) {
             return 0;
         } else {
-            int BonusMiles = Price / 20;
-            return calculate(Price - BonusMiles * 20) + BonusMiles;
+            int BonusMiles = price / 20;
+            return (BonusMiles);
         }
     }
 }
